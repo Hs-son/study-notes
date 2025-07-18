@@ -1,5 +1,7 @@
 <?php
-$conn = new mysqli('localhost', 'UnivAdmin', 'kook1946', 'UnivDB');
+include 'univdb_config.php';
+
+$conn = new mysqli('localhost', $user, $pass, 'UnivDB');
 
 if ($conn->connect_error) {
     die("연결 실패: " . $conn->connect_error);
