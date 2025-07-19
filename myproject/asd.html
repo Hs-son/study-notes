@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>콘솔 로그 실습</title>
+</head>
+<body>
+
+<button onclick="sayHello()">인사하기</button>
+
+<script>
+  function sayHello() {
+    const name = prompt('이름을 입력하세요');
+    console.log('입력받은 이름:', name);  // 콘솔에 출력
+
+    if (name) {
+      alert('안녕하세요, ' + name + '님!');
+    } else {
+      alert('이름을 입력하지 않으셨습니다.');
+    }
+  }
+</script>
+
+</body>
+</html>

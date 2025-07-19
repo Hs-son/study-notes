@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>datalist 태그 속성들의 종류</title>
+</head>
+
+<body>
+  <h2>&lt;datalist&gt; 태그 예제 모음</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>속성 / 형태</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>datalist 기본</td> <td>자동완성 옵션 목록 생성</td> 
+        <td>
+          <input list="fruits" placeholder="과일 선택">
+          <datalist id="fruits">
+            <option value="사과">
+            <option value="바나나">
+            <option value="오렌지">
+            <option value="포도">
+          </datalist>
+        </td>
+      </tr>
+      <tr><td>input + datalist</td> <td>input과 연결해 입력 보조</td>
+        <td>
+          <form onsubmit="alert('선택된 값: ' + this.fruit.value); return false;">
+            <input name="fruit" list="fruits" placeholder="과일 입력">
+            <datalist id="fruits">
+              <option value="사과">
+              <option value="배">
+              <option value="체리">
+              <option value="딸기">
+            </datalist>
+            <button type="submit">제출</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

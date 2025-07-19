@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>textarea 태그 속성들의 종류</title>
+</head>
+
+<body>
+  <h2>&lt;textarea&gt; 태그 예제 모음</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>type</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>rows="3", cols="10"</td> <td>표시되는 세로/가로 크기 지정</td> <td><textarea rows="3" cols="10" placeholder="행과 열 지정"></textarea></td></tr>
+      <tr><td>maxlength="20"</td> <td>최대 글자 수 제한</td> <td><textarea maxlength="20" placeholder="20자 제한"></textarea></td></tr>
+      <tr><td>readonly</td> <td>읽기 전용 (수정 불가)</td> <td><textarea readonly>읽기 전용입니다</textarea></td></tr>
+      <tr><td>disabled</td> <td>비활성화 (회색처리)</td> <td><textarea disabled>비활성화 상태</textarea></td></tr>
+      <tr><td>wrap</td> <td>동 줄바꿈 및<br>전송 시 개행 포함 여부<br>(soft, hard, off)</td> <td><textarea wrap="hard" cols="20" rows="3" placeholder="줄바꿈 전송"></textarea></td></tr>
+      <tr><td>autofocus</td> <td>페이지 로드 시<br>자동으로 커서 위치</td> <td><textarea autofocus placeholder="자동 포커스"></textarea></td></tr>
+      <tr><td>required</td> <td>폼 제출 시 필수 입력</td>
+        <td><form onsubmit="alert('제출됨');">
+          <textarea required></textarea><br>
+          <button type="submit">제출</button>
+          <button type="reset">초기화</button>
+        </form> </td></tr>
+      <tr><td>name</td> <td>폼에서 key 역할</td>
+        <td><form onsubmit="alert('전송됨: ' + this.comment.value);">
+          <textarea name="comment" placeholder="이름"></textarea><br>
+          <button type="submit">제출</button>
+        </form> </td></tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

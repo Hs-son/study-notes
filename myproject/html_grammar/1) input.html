@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>input 태그 type 속성들의 종류</title>
+</head>
+
+<body>
+  <h2>&lt;input&gt; 태그 예제 모음</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>type</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>button</td> <td>버튼</td> <td><input type="button" value="누르기"></td></tr>
+      <tr><td>checkbox</td> <td>체크박스</td> <td><input type="checkbox" checked>사과 <input type="checkbox">바나나</td></tr>
+      <tr><td>color</td> <td>색상 선택</td> <td><input type="color" value="#ff0000"></td></tr>
+      <tr><td>date</td> <td>날짜 선택</td> <td><input type="date" value="2025-07-19"></td></tr>
+      <tr><td>datetime-local</td> <td>날짜와 시간</td> <td><input type="datetime-local" value="2025-07-19T12:34"></td></tr>
+      <tr><td>email</td> <td>이메일 입력</td> <td><input type="email" placeholder="example@domain.com" required></td></tr>
+      <tr><td>file</td> <td>파일 업로드</td> <td><input type="file" multiple></td></tr>
+      <tr><td>hidden</td> <td>숨김 필드</td> <td>✔️ 보이지 않음: <code>&lt;input type="hidden" value="abc"&gt;</code></td></tr>
+      <tr><td>month</td> <td>월 선택</td> <td><input type="month" value="2025-07"></td></tr>
+      <tr><td>number</td> <td>숫자 입력</td> <td><input type="number" min="0" max="100" step="5" value="50"></td></tr>
+      <tr><td>password</td> <td>비밀번호</td> <td><input type="password" placeholder="비밀번호 입력"></td></tr>
+      <tr><td>radio</td> <td>라디오 버튼</td> <td><input type="radio" name="gender" checked>남성 <input type="radio" name="gender">여성 <input type="radio" name="gender">없음</td></tr>
+      <tr><td>range</td> <td>슬라이더</td> <td><input type="range" min="1" max="10" value="5"></td></tr>
+      <tr><td>search</td> <td>검색창</td> <td><input type="search" placeholder="검색어 입력"></td></tr>
+      <tr><td>tel</td> <td>전화번호</td> <td><input type="tel" placeholder="010-0000-0000"></td></tr>
+      <tr><td>text</td> <td>일반 텍스트</td> <td><input type="text" placeholder="이름 입력"></td></tr>
+      <tr><td>time</td> <td>시간 선택</td> <td><input type="time" value="13:30"></td></tr>
+      <tr><td>url</td> <td>URL 입력</td> <td><input type="url" placeholder="https://example.com"></td></tr>
+      <tr><td>week</td> <td>주 선택</td> <td><input type="week" value="2025-W29"></td></tr>
+      <tr><td>reset</td> <td>초기화</td>
+        <td><form>
+          <input type="text" placeholder="입력하세요.">
+          <input type="reset" value="초기화하기">
+        </form> </td></tr>
+      <tr><td>submit</td> <td>제출</td>
+        <td><form onsubmit="alert('제출함');">
+          <input type="submit" value="제출하기">
+        </form> </td></tr>
+      <tr><td>image</td> <td>이미지</td>
+        <td><form onsubmit="alert('이미지 버튼 제출');">
+          <input type="image" src="https://dummyimage.com/40x40/000/fff.png&text=OK" alt="이미지 안 뜨면 나오는 메세지">
+        </form> </td></tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

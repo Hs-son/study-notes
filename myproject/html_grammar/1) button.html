@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>button 태그 type 속성들의 종류</title>
+</head>
+
+<body>
+  <h2>&lt;button&gt; 태그 예제 모음</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>type</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>button</td> <td>기본 버튼</td> <td><button type="button" onclick="alert('클릭됨')">buTTon</button></td></tr>
+      <tr><td>disabled</td> <td>비활성화된 버튼</td> <td><button disabled>disaBled</button></td></tr>
+      <tr><td>submit</td> <td>폼 제출 버튼</td>
+        <td><form onsubmit="alert('제출함');">
+          <button type="submit">subMit</button>
+        </form> </td></tr>
+      <tr><td>reset</td> <td>폼 내용 초기화</td>
+        <td><form>
+          <input type="text" placeholder="입력하시오.">
+          <button type="reset">reSet</button>
+        </form> </td></tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

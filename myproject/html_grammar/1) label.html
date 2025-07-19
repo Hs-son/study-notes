@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>label 태그 예제 모음</title>
+</head>
+
+<body>
+  <h2>&lt;label&gt; 태그 예제 모음</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>형태</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>for 속성 (연결)</td> 
+        <td>label 클릭 시 id와 연결된 입력창에 포커스 이동</td> 
+        <td><label for="id1">아이디</label> <input type="text" id="id1"></td>
+      </tr>
+      <tr><td>중첩 구조</td> 
+        <td>input을 label 안에 넣어도 연결됨</td> 
+        <td><label>이메일 <input type="email"></label></td>
+      </tr>
+      <tr><td>checkbox + label</td> 
+        <td>체크박스 텍스트 클릭해도 체크됨</td> 
+        <td><input type="checkbox" id="agree"> <label for="agree">동의함</label></td>
+      </tr>
+      <tr><td>radio + label</td> 
+        <td>라디오 버튼 텍스트 클릭 가능, 여러 중 하나 선택</td> 
+        <td><input type="radio" id="man" name="gender"><label for="man">남</label> <input type="radio" id="woman" name="gender"><label for="woman">여</label></td>
+      </tr>
+      <tr><td>select + label</td> 
+        <td>드롭다운 메뉴도 label 연결 가능</td> 
+        <td><label for="sel">과일</label> <select id="sel"><option>사과</option><option>바나나</option></select></td>
+      </tr>
+      <tr><td>접근성</td> 
+        <td>보조기기(화면 낭독기 등)에 도움 됨</td> 
+        <td><label for="user">사용자</label> <input type="text" id="user"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

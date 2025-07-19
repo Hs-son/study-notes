@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>&lt;option&gt; 태그 속성 예제</title>
+</head>
+
+<body>
+  <h2>&lt;option&gt; 태그 속성 예제</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>속성</th>
+        <th>설명</th>
+        <th>예시</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>value</td>
+        <td>서버에 전송되는 값 지정</td>
+        <td>
+          <select>
+            <option value="apple">사과</option>
+            <option value="banana">바나나</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>selected</td>
+        <td>기본 선택 항목 지정</td>
+        <td>
+          <select>
+            <option value="apple">사과</option>
+            <option value="banana" selected>바나나</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>선택할 수 없는 옵션으로 표시</td>
+        <td>
+          <select>
+            <option value="apple">사과</option>
+            <option value="banana" disabled>바나나 (비활성화)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>label</td>
+        <td>
+          보조 설명용 텍스트 (일반적으로 <code>&lt;datalist&gt;</code>나 <code>&lt;optgroup&gt;</code>에서 사용)<br>
+          대부분 브라우저에서는 별도로 표시되지 않음
+        </td>
+        <td>
+          <datalist id="fruits">
+            <option value="apple" label="사과 과일">
+            <option value="banana" label="노란 바나나">
+          </datalist>
+          <input list="fruits" placeholder="과일 선택">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

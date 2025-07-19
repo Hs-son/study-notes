@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>숫자 곱</title>
+</head>
+
+<body>
+<span id="결과">1</span>
+<br><br>
+
+<button onclick="mul(1)">1</button>
+<button onclick="mul(2)">2</button>
+<button onclick="mul(3)">3</button>
+<button onclick="mul(4)">4</button>
+<button onclick="mul(5)">5</button>
+<br>
+<button onclick="reset()">reset</button>
+
+<script>
+function mul(숫자) {
+    const origin = parseInt(document.getElementById("결과").innerText);
+    if (origin * 숫자 < 100){
+        document.getElementById("결과").innerText = origin * 숫자;
+    }
+    else {
+        alert("100 이상입니다! 초기화 해주세요.")
+    }
+}
+
+function reset() {
+    document.getElementById("결과").innerText = 1;
+}
+
+</script>
+
+</body>
+
+</html>
